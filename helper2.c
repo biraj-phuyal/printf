@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   helper2.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:24:47 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/06/23 19:46:08 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/09 19:02:20 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int ft_hexa_pointer(unsigned long long n)
 	
 	count = 0;
     if (n == 0)
-        return (write(1, "0x0", 3)); 
+        return (write(1, "(nil)", 5)); 
 
     count += write(1, "0x", 2);
     if (n >= 16)

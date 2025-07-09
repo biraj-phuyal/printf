@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:24:36 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/09 17:28:32 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/09 19:03:19 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,8 +74,8 @@ int main(void)
     ret2 = printf("String: %s\n", "Hello");
     printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
 
-    ret1 = ft_printf("Pointer: %p\n", (void *)0x1234);
-    ret2 = printf("Pointer: %p\n", (void *)0x1234);
+    ret1 = ft_printf("Pointer: %p %p ", (void *)0, (void *)0);
+    ret2 = printf("Pointer: %p %p ", (void *)0, (void *)0);
     printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
 
     ret1 = ft_printf("Decimal: %d\n", 123);
@@ -103,5 +103,5 @@ int main(void)
     printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
 
     return 0;
-}
- */
+} */
+
