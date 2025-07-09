@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:24:36 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/09 19:53:45 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/09 20:07:41 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int	ft_printf(const char *format, ...)
 	return (length);
 }
 
-/* 
+
 int main(void)
 {
     int ret1, ret2;
@@ -105,4 +105,4 @@ int main(void)
 
     return 0;
 } 
-*/
+
