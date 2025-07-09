@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:24:36 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/09 19:03:19 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/09 19:53:45 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_formater(va_list args, const char format)
+int	ft_formater(va_list args, const char format)
 {
-	int length;
+	int	length;
 
 	length = 0;
 	if (format == 'c')
@@ -40,9 +40,9 @@ int ft_formater(va_list args, const char format)
 
 int	ft_printf(const char *format, ...)
 {
-	int i;
-	int length;
-	va_list args;
+	int			i;
+	int			length;
+	va_list		args;
 
 	i = 0;
 	length = 0;
@@ -61,6 +61,7 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (length);
 }
+
 /* 
 int main(void)
 {
@@ -103,5 +104,5 @@ int main(void)
     printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
 
     return 0;
-} */
-
+} 
+*/
