@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   helper.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:24:44 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/01 15:01:44 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/09 17:32:26 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,17 @@ int ft_unsigned(unsigned int n)
     return (count);
 }
 
-int ft_num(long long n)
+int ft_num(int n)
 {
-    long long count;
+    int count;
 
     count = 0;
+    if (n == -2147483648)
+    {
+        write(1, "-2147483648", 11);
+        count = 11;
+        return count;
+    }
     if (n < 0)
     {
         count += ft_char('-');

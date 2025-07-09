@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:24:41 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/01 15:02:23 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/09 17:28:29 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,11 @@
 #include <unistd.h>
 #include <stdio.h>
 
+int ft_printf(const char *format, ...);
 int ft_strs(char *str);
 int ft_char(int c);
 int ft_unsigned(unsigned int n);
-int ft_num(long long n);
+int ft_num(int n);
 int ft_hexa_lower(unsigned int n);
 int ft_hexa_upper(unsigned int n);
 int ft_hexa_pointer(unsigned long long n);

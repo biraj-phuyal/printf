@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: biphuyal <biphuyal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:24:36 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/01 15:01:48 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/09 17:28:32 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int ft_formater(va_list args, const char format)
 	else if (format == 'p')
 		length += ft_hexa_pointer(va_arg(args, unsigned long long));
 	else if (format == 'd' || format == 'i')
-		length += ft_num(va_arg(args, long long));
+		length += ft_num(va_arg(args, int));
 	else if (format == '%')
 		length += ft_char('%');
 	else if (format == 'u')
