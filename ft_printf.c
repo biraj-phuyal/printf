@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 11:44:09 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/10 15:22:05 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/10 21:46:29 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,24 +68,22 @@ int main(void)
 {
     int ret1, ret2;
 
-    // Simple percent tests
     ret1 = printf("1: [%%]\n");
     ret2 = ft_printf("1: [%%]\n");
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    ret1 = printf("2: [%%%%]\n"); // Should print %%
+    ret1 = printf("2: [%%%%]\n");
     ret2 = ft_printf("2: [%%%%]\n");
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    ret1 = printf("3: [%%%%%%]\n"); // Should print %%%
+    ret1 = printf("3: [%%%%%%]\n");
     ret2 = ft_printf("3: [%%%%%%]\n");
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    ret1 = printf("4: [%%%%%%]\n"); // Should print %%%
+    ret1 = printf("4: [%%%%%%]\n");
     ret2 = ft_printf("4: [%%%%%%]\n");
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    // Specifier tests
     ret1 = printf("Char: [%c]\n", 'A');
     ret2 = ft_printf("Char: [%c]\n", 'A');
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
@@ -114,15 +112,15 @@ int main(void)
     ret2 = ft_printf("Unsigned: [%u]\n", 3000000000U);
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    ret1 = printf("Hex (lower): [%x]\n", 65535);
-    ret2 = ft_printf("Hex (lower): [%x]\n", 65535);
+    ret1 = printf("Hex (lower): [%x]\n", 0xdeadbeef);
+    ret2 = ft_printf("Hex (lower): [%x]\n", 0xdeadbeef);
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    ret1 = printf("Hex (upper): [%X]\n", 65535);
-    ret2 = ft_printf("Hex (upper): [%X]\n", 65535);
+    ret1 = printf("Hex (upper): [%X]\n", 4294967295);
+    ret2 = ft_printf("Hex (upper): [%X]\n", 4294967295);
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    // Mixed specifiers
+
     ret1 = printf("Mix: %c %s %p %d %u %x %%\n", 'Z', "42", (void *)42, -42, 42U, 42);
     ret2 = ft_printf("Mix: %c %s %p %d %u %x %%\n", 'Z', "42", (void *)42, -42, 42U, 42);
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
