@@ -6,7 +6,7 @@
 #    By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/23 16:35:26 by biphuyal          #+#    #+#              #
-#    Updated: 2025/07/10 09:25:32 by biphuyal         ###   ########.fr        #
+#    Updated: 2025/07/10 11:44:59 by biphuyal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,8 @@ CC = cc
 HEADER = ft_printf.h
 CFLAGS = -Wall -Wextra -Werror
 SRC = ft_printf.c \
-	helper.c \
-	helper2.c
+	ft_helper.c \
+	ft_helper2.c
 
 OBJ = $(SRC:.c=.o)
 

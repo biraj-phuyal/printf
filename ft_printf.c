@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/23 17:24:36 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/09 20:07:41 by biphuyal         ###   ########.fr       */
+/*   Created: 2025/07/10 11:44:09 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/07/10 11:44:11 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,48 +61,3 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (length);
 }
-
-
-int main(void)
-{
-    int ret1, ret2;
-
-    ret1 = ft_printf("Char: %c\n", 'A');
-    ret2 = printf("Char: %c\n", 'A');
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    ret1 = ft_printf("String: %s\n", "Hello");
-    ret2 = printf("String: %s\n", "Hello");
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    ret1 = ft_printf("Pointer: %p %p ", (void *)0, (void *)0);
-    ret2 = printf("Pointer: %p %p ", (void *)0, (void *)0);
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    ret1 = ft_printf("Decimal: %d\n", 123);
-    ret2 = printf("Decimal: %d\n", 123);
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    ret1 = ft_printf("Int: %i\n", -456);
-    ret2 = printf("Int: %i\n", -456);
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    ret1 = ft_printf("Unsigned: %u\n", 4294967295u);
-    ret2 = printf("Unsigned: %u\n", 4294967295u);
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    ret1 = ft_printf("Hex (lower): %x\n", 305419896);
-    ret2 = printf("Hex (lower): %x\n", 305419896);
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    ret1 = ft_printf("Hex (upper): %X\n", 305419896);
-    ret2 = printf("Hex (upper): %X\n", 305419896);
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    ret1 = ft_printf("Percent: %%\n");
-    ret2 = printf("Percent: %%\n");
-    printf("ft_printf: %d, printf: %d, %s\n", ret1, ret2, (ret1 == ret2) ? "OK" : "FAIL");
-
-    return 0;
-} 
-

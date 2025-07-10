@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/23 17:24:41 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/09 19:49:56 by biphuyal         ###   ########.fr       */
+/*   Created: 2025/07/10 11:44:01 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/07/10 11:44:03 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdio.h>
 
 int	ft_printf(const char *format, ...);
 int	ft_strs(char *str);
