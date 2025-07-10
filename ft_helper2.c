@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 11:45:26 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/10 11:45:28 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/10 15:07:19 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,23 +35,19 @@ int	ft_char(int c)
 
 int	ft_hexa_pointer(unsigned long long n)
 {
-	int	count;
+	int	count = 0;
 
-	count = 0;
 	if (n == 0)
 		return (write(1, "(nil)", 5));
 	count += write(1, "0x", 2);
-	if (n >= 16)
-		count += ft_hexa_pointer_rec(n / 16);
-	count += ft_char("0123456789abcdef"[n % 16]);
+	count += ft_hexa_pointer_rec(n);
 	return (count);
 }
 
 int	ft_hexa_pointer_rec(unsigned long long n)
 {
-	int	count;
+	int	count = 0;
 
-	count = 0;
 	if (n >= 16)
 		count += ft_hexa_pointer_rec(n / 16);
 	count += ft_char("0123456789abcdef"[n % 16]);
