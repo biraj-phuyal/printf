@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 11:44:09 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/10 15:04:35 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/10 15:22:05 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,12 +114,12 @@ int main(void)
     ret2 = ft_printf("Unsigned: [%u]\n", 3000000000U);
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    ret1 = printf("Hex (lower): [%x]\n", 0xdeadbeef);
-    ret2 = ft_printf("Hex (lower): [%x]\n", 0xdeadbeef);
+    ret1 = printf("Hex (lower): [%x]\n", 65535);
+    ret2 = ft_printf("Hex (lower): [%x]\n", 65535);
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
-    ret1 = printf("Hex (upper): [%X]\n", 0xdeadbeef);
-    ret2 = ft_printf("Hex (upper): [%X]\n", 0xdeadbeef);
+    ret1 = printf("Hex (upper): [%X]\n", 65535);
+    ret2 = ft_printf("Hex (upper): [%X]\n", 65535);
     printf("ret1 = %d, ret2 = %d\n\n", ret1, ret2);
 
     // Mixed specifiers
