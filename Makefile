@@ -6,13 +6,12 @@
 #    By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/23 16:35:26 by biphuyal          #+#    #+#              #
-#    Updated: 2025/07/10 11:44:59 by biphuyal         ###   ########.fr        #
+#    Updated: 2025/07/10 14:53:35 by biphuyal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 CC = cc
-HEADER = ft_printf.h
 CFLAGS = -Wall -Wextra -Werror
 SRC = ft_printf.c \
 	ft_helper.c \
@@ -25,7 +24,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c $(HEADER)
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
